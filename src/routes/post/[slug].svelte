@@ -63,7 +63,8 @@
   <div class="mb-6 flex justify-between">
     <div>
       {#if post.tags} {#each post.tags as tag}
-      <span class="py-1 px-2 mr-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">{tag}</span>
+      <!-- <span class="py-1 px-2 mr-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">{tag}</span> -->
+      <span class="badge badge-primary text-xs"> {tag}</span>
       {/each} {/if}
     </div>
     <p class="text-gray-400 text-xs tracking-widest mt-0.5">{new Date(post.date).toDateString()}</p>
